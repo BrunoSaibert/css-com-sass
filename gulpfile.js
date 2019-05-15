@@ -8,7 +8,7 @@ const browserSync = require('browser-sync').create();
 function compilaSass() {
   return gulp.src('scss/*.scss')
     .pipe(sass({
-      outputStyle: 'compressed'
+      outputStyle: 'expanded'
     }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -24,9 +24,18 @@ gulp.task('sass', compilaSass);
 //Tarefa para iniciar o Browser-Sync
 gulp.task('browser-sync', browser);
 
-//FUnção de watch do gulp
+//Função para iniciar o Browser
+function browser() {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+}
+
+//Função de watch do gulp
 function watch() {
-  gulp.watch('css/scss/*.scss', compilaSass);
+  gulp.watch('scss/*.scss', compilaSass);
   gulp.watch('*.html').on('change', browserSync.reload);
 }
 
