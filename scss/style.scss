@@ -1,14 +1,32 @@
-@import "colors";
-@import "buttons";
+$cor-primaria: #1b9;
+$font-primaria: monospace;
 
-$preto: #999;
+section {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-div {
-  background: $preto;
-  height: 300px;
-  width: 500px;
-  a {
-    color: red;
-    background: blue;
-  }
+h1 {
+  color: $cor-primaria;
+  font-family: $font-primaria;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  max-width: 400px;
+  font-family: $font-primaria;
+}
+
+a {
+  display: block;
+  max-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background: $cor-primaria;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: monospace;
 }

@@ -1,21 +1,29 @@
+section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1b9;
+  font-family: monospace;
+}
+
 p {
-  color: blue;
-  background: gray;
+  font-size: 1.2em;
+  line-height: 1.4;
+  max-width: 400px;
+  font-family: monospace;
 }
 
 a {
   display: block;
-  width: 200px;
-  height: 40px;
-}
-
-div {
-  background: #999;
-  height: 300px;
-  width: 500px;
-}
-
-div a {
-  color: red;
-  background: blue;
+  max-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background: #1b9;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: monospace;
 }
