@@ -30,3 +30,15 @@ a {
   text-transform: uppercase;
   font-family: monospace;
 }
+
+ul {
+  text-align: center;
+
+  li {
+    list-style: none;
+
+    a {
+      color: blue;
+    }
+  }
+}
